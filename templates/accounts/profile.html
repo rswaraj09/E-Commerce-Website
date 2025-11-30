@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile - Simple E-Commerce{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <div class="bg-white shadow rounded-lg">
+        <div class="px-6 py-4 border-b border-gray-200">
+            <h1 class="text-2xl font-bold text-gray-900">
+                <i class="fas fa-user-circle mr-2 text-primary"></i>
+                My Profile
+            </h1>
+        </div>
+        
+        <div class="p-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h2 class="text-lg font-semibold mb-4">Account Information</h2>
+                    <div class="space-y-3">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Username</label>
+                            <p class="text-sm text-gray-900">{{ user.username }}</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Email</label>
+                            <p class="text-sm text-gray-900">{{ user.email|default:"Not provided" }}</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <p class="text-sm text-gray-900">{{ profile.phone_number|default:"Not provided" }}</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Address</label>
+                            <p class="text-sm text-gray-900">{{ profile.address|default:"Not provided" }}</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <a href="{% url 'accounts:edit_profile' %}" 
+                           class="bg-primary text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">
+                            <i class="fas fa-edit mr-2"></i>Edit Profile
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-lg font-semibold mb-4">Shopping Statistics</h2>
+                    <div class="bg-gray-50 p-4 rounded-lg space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-sm font-medium text-gray-700">Total Orders:</span>
+                            <span class="text-sm font-bold text-gray-900">{{ profile.total_orders }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-sm font-medium text-gray-700">Total Spent:</span>
+                            <span class="text-sm font-bold text-gray-900">${{ profile.total_spent }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-sm font-medium text-gray-700">Average Order Value:</span>
+                            <span class="text-sm font-bold text-gray-900">${{ profile.average_order_value }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-sm font-medium text-gray-700">Customer Segment:</span>
+                            <span class="text-sm font-bold text-primary">{{ profile.customer_segment|default:"New Customer" }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+

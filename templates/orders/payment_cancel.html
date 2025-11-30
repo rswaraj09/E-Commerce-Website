@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Payment Cancelled - Simple E-Commerce{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gray-50 py-8">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <!-- Header -->
+            <div class="bg-gradient-to-r from-red-600 to-orange-600 px-6 py-4">
+                <h1 class="text-2xl font-bold text-white">Payment Cancelled</h1>
+                <p class="text-red-100 mt-1">Your payment was not completed</p>
+            </div>
+
+            <div class="p-6">
+                <!-- Cancellation Message -->
+                <div class="text-center mb-8">
+                    <div class="mx-auto w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Payment Was Cancelled</h2>
+                    <p class="text-gray-600">No charges were made to your account. Your cart items are still available.</p>
+                </div>
+
+                <!-- What Happened -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">What Happened?</h3>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <div class="space-y-3">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <span class="text-white text-xs font-bold">!</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Payment Process Interrupted</h4>
+                                    <p class="text-sm text-gray-600">The payment process was cancelled before completion.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <span class="text-white text-xs font-bold">✓</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">No Charges Made</h4>
+                                    <p class="text-sm text-gray-600">Your payment method was not charged.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <span class="text-white text-xs font-bold">🛒</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Cart Preserved</h4>
+                                    <p class="text-sm text-gray-600">Your cart items are still available for checkout.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Common Reasons -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Common Reasons for Cancellation</h3>
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                        <div class="space-y-3">
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-blue-900">Browser Navigation</h4>
+                                    <p class="text-sm text-blue-700">You may have navigated away from the payment page.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-blue-900">Payment Method Issues</h4>
+                                    <p class="text-sm text-blue-700">There might have been an issue with your payment method.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-blue-900">Session Timeout</h4>
+                                    <p class="text-sm text-blue-700">The payment session may have timed out.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-200">
+                    <a href="{% url 'products:cart_view' %}" class="flex-1 px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors text-center">
+                        Return to Cart
+                    </a>
+                    <a href="{% url 'products:product_list' %}" class="flex-1 px-6 py-3 border border-gray-300 rounded-md text-center text-gray-700 font-medium hover:bg-gray-50 transition-colors">
+                        Continue Shopping
+                    </a>
+                </div>
+
+                <!-- Need Help -->
+                <div class="mt-6 text-center">
+                    <p class="text-sm text-gray-600 mb-2">Need help with your payment?</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Contact Customer Support</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

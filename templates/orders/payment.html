@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Payment - Simple E-Commerce{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gray-50 py-8">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <!-- Header -->
+            <div class="bg-gradient-to-r from-green-600 to-blue-600 px-6 py-4">
+                <h1 class="text-2xl font-bold text-white">Payment</h1>
+                <p class="text-green-100 mt-1">Order #{{ order.order_id }}</p>
+            </div>
+
+            <div class="p-6">
+                <!-- Order Summary -->
+                <div class="mb-6">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-4">Order Summary</h2>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Subtotal:</span>
+                                <span class="font-medium">₹{{ order.subtotal }}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Total:</span>
+                                <span class="text-lg font-bold text-blue-600">₹{{ order.total }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Form -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Payment Information</h3>
+                    <form method="post" id="payment-form" class="space-y-4">
+                        {% csrf_token %}
+                        
+                        <!-- Card Number -->
+                        <div>
+                            <label for="card_number" class="block text-sm font-medium text-gray-700 mb-2">
+                                Card Number
+                            </label>
+                            <input 
+                                type="text" 
+                                id="card_number" 
+                                name="card_number" 
+                                required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="1234 5678 9012 3456"
+                            >
+                        </div>
+
+                        <!-- Card Details Row -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label for="expiry" class="block text-sm font-medium text-gray-700 mb-2">
+                                    Expiry Date
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="expiry" 
+                                    name="expiry" 
+                                    required
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    placeholder="MM/YY"
+                                >
+                            </div>
+                            <div>
+                                <label for="cvv" class="block text-sm font-medium text-gray-700 mb-2">
+                                    CVV
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="cvv" 
+                                    name="cvv" 
+                                    required
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    placeholder="123"
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Cardholder Name -->
+                        <div>
+                            <label for="cardholder_name" class="block text-sm font-medium text-gray-700 mb-2">
+                                Cardholder Name
+                            </label>
+                            <input 
+                                type="text" 
+                                id="cardholder_name" 
+                                name="cardholder_name" 
+                                required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="John Doe"
+                            >
+                        </div>
+
+                        <!-- Security Notice -->
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="text-sm font-medium text-blue-900">Secure Payment</h4>
+                                    <p class="text-sm text-blue-700 mt-1">Your payment information is encrypted and secure. We use Stripe for payment processing.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-200">
+                            <a href="{% url 'orders:checkout' %}" class="flex-1 px-6 py-3 border border-gray-300 rounded-md text-center text-gray-700 font-medium hover:bg-gray-50 transition-colors">
+                                Back to Checkout
+                            </a>
+                            <button type="submit" class="flex-1 px-6 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors">
+                                Pay ₹{{ order.total }}
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Payment Methods -->
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <h4 class="text-sm font-medium text-gray-900 mb-3">Accepted Payment Methods</h4>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <span class="text-sm text-gray-600">Visa</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <span class="text-sm text-gray-600">Mastercard</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <span class="text-sm text-gray-600">American Express</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Simple form validation
+document.getElementById('payment-form').addEventListener('submit', function(e) {
+    const cardNumber = document.getElementById('card_number').value;
+    const expiry = document.getElementById('expiry').value;
+    const cvv = document.getElementById('cvv').value;
+    const cardholderName = document.getElementById('cardholder_name').value;
+
+    if (!cardNumber || !expiry || !cvv || !cardholderName) {
+        e.preventDefault();
+        alert('Please fill in all payment fields.');
+        return;
+    }
+
+    // Basic card number validation (16 digits)
+    if (!/^\d{16}$/.test(cardNumber.replace(/\s/g, ''))) {
+        e.preventDefault();
+        alert('Please enter a valid 16-digit card number.');
+        return;
+    }
+
+    // Basic expiry validation (MM/YY format)
+    if (!/^\d{2}\/\d{2}$/.test(expiry)) {
+        e.preventDefault();
+        alert('Please enter expiry date in MM/YY format.');
+        return;
+    }
+
+    // Basic CVV validation (3-4 digits)
+    if (!/^\d{3,4}$/.test(cvv)) {
+        e.preventDefault();
+        alert('Please enter a valid CVV (3-4 digits).');
+        return;
+    }
+});
+</script>
+{% endblock %}

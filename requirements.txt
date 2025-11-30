@@ -1,0 +1,17 @@
+Django==5.2.5
+djangorestframework==3.16.1
+django-cors-headers==4.7.0
+Pillow==11.3.0
+scikit-learn==1.7.1
+pandas==2.3.2
+numpy==2.3.2
+matplotlib==3.10.5
+seaborn==0.13.2
+plotly==6.3.0
+django-crispy-forms==2.4
+crispy-tailwind==1.0.3
+psycopg2-binary==2.9.10
+python-decouple==3.8
+stripe==12.4.0
+
+

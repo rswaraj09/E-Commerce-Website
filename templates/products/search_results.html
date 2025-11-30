@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block title %}Search Results - Simple E-Commerce{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        <i class="fas fa-search mr-3 text-primary"></i>
+        Search Results
+    </h1>
+    {% if query %}
+        <p class="text-xl text-gray-600">Results for "{{ query }}"</p>
+    {% endif %}
+</div>
+
+<!-- Search Bar -->
+<div class="mb-8">
+    <form method="GET" action="{% url 'products:search_products' %}" class="flex">
+        <input type="text" name="q" value="{{ query }}" placeholder="Search products..." 
+               class="flex-1 px-4 py-3 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+        <button type="submit" class="bg-primary text-white px-6 py-3 rounded-r-md hover:bg-blue-600 transition-colors">
+            <i class="fas fa-search"></i>
+        </button>
+    </form>
+</div>
+
+<!-- Results -->
+<div class="mb-8">
+    {% if products or txt_products %}
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {% for product in products %}
+            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 group overflow-hidden">
+                <div class="relative">
+                    {% if product.image_url %}
+                        <img src="{{ product.image_url }}" alt="{{ product.name }}" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    {% elif product.image %}
+                        <img src="{{ product.image.url }}" alt="{{ product.name }}" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    {% else %}
+                        <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
+                            <i class="fas fa-image text-4xl text-gray-400"></i>
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-900 mb-2 line-clamp-2">
+                        <a href="{% url 'products:product_detail' product.pk %}" class="hover:text-primary transition-colors">
+                            {{ product.name }}
+                        </a>
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-3 line-clamp-2">{{ product.description|truncatewords:15 }}</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-bold text-gray-900">₹{{ product.price|floatformat:0|intcomma }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% for product in txt_products %}
+            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 group overflow-hidden">
+                <div class="relative">
+                    {% if product.image_url %}
+                        <img src="{{ product.image_url }}" alt="{{ product.name }}" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    {% else %}
+                        <div class="w-full h-48 bg-gray-100 flex items-center justify-center">
+                            <i class="fas fa-file-alt text-4xl text-blue-400"></i>
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-900 mb-2 line-clamp-2">{{ product.name }}</h3>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-bold text-gray-900">₹{{ product.price }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="text-center py-12">
+            <i class="fas fa-search text-6xl text-gray-300 mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-600 mb-2">No products found</h3>
+            <p class="text-gray-500 mb-6">Try searching with different keywords or browse our categories</p>
+            <a href="{% url 'products:product_list' %}" class="bg-primary text-white px-6 py-3 rounded-md hover:bg-blue-600 transition-colors">
+                <i class="fas fa-shopping-bag mr-2"></i>Browse All Products
+            </a>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

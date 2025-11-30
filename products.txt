@@ -1,0 +1,187 @@
+Item Name,Price (INR),Image URL
+iPhone 15 Pro,82000,https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=400&fit=crop
+Samsung Galaxy S24,66000,https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop
+MacBook Air M3,92000,https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=400&h=400&fit=crop
+Dell XPS 13,99000,https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop
+Sony WH-1000XM5,28000,https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop
+OnePlus 12,59000,https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop
+Xiaomi Redmi Note 13,22000,https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop
+Google Pixel 8,72000,https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop
+HP Spectre x360,87000,https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop
+Lenovo ThinkPad X1,88000,https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop
+Asus ZenBook 14,76000,https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop
+Bose QC 45,26000,https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop
+JBL Tune 760,8500,https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop
+Sennheiser HD 450BT,12000,https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop
+Boat Rockerz 510,2500,https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop
+Apple Watch Series 9,42000,https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop
+Samsung Galaxy Watch 6,32000,https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop
+Fitbit Versa 4,18000,https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop
+Garmin Forerunner 265,35000,https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop
+Amazfit GTS 4,15000,https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop
+"Sony Bravia 55"" 4K",82000,https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=400&fit=crop
+"Samsung QLED 50""",76000,https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=400&fit=crop
+"LG OLED 48""",88000,https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=400&fit=crop
+"TCL 4K 43""",35000,https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=400&fit=crop
+"Panasonic LED 40""",30000,https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=400&fit=crop
+Nike Air Max,9000,https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop
+Adidas Ultraboost 22,10500,https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop
+Puma RS-X,7000,https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop
+Reebok Classic,6500,https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop
+Skechers GoWalk,8000,https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop
+Levi's 501 Jeans,3500,https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=400&fit=crop
+H&M Cotton Shirt,1200,https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop
+Zara Leather Jacket,7500,https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=400&fit=crop
+Uniqlo T-Shirt,1000,https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop
+Adidas Hoodie,2800,https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=400&fit=crop
+Rice (5kg),450,
+Wheat Flour (5kg),300,
+Sugar (1kg),50,
+Milk (1L),60,
+Cooking Oil (1L),180,
+Python Programming Book,600,https://images.unsplash.com/photo-1517842645767-c639042777db?w=400&h=400&fit=crop
+Data Science Handbook,850,https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=400&fit=crop
+AI for Beginners,700,https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=400&fit=crop
+ML with Python,950,https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=400&fit=crop
+Deep Learning Guide,1200,https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=400&fit=crop
+Ikea Office Chair,5500,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Wooden Dining Table,12500,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Office Desk,8800,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Bookshelf,6400,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Sofa Set,28000,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Samsung Galaxy Buds 2,9000,https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop
+Apple AirPods Pro 2,24000,https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop
+OnePlus Buds Pro 2,11000,https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop
+Boat Airdopes 441,2500,https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop
+Noise Shots X5,4500,https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop
+HP Pavilion 15,55000,https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop
+Dell Inspiron 14,48000,https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop
+Asus ROG Zephyrus,125000,https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop
+Acer Swift 3,45000,https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop
+MSI Gaming GF65,78000,https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop
+Sony PlayStation 5,58000,https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=400&h=400&fit=crop
+Xbox Series X,52000,https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=400&h=400&fit=crop
+Nintendo Switch OLED,35000,https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=400&h=400&fit=crop
+Logitech G Pro Mouse,4500,https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop
+Razer BlackWidow Keyboard,8500,https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop
+Samsung SSD 1TB,6200,https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop
+WD External HDD 2TB,5600,https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop
+Seagate HDD 1TB,4200,https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop
+Sandisk 128GB Pen Drive,900,https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop
+Kingston 256GB SSD,3100,https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop
+Canon EOS 1500D,38000,https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=400&fit=crop
+Nikon D5600,42000,https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=400&fit=crop
+Sony Alpha A6400,68000,https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=400&fit=crop
+Fujifilm X-T200,52000,https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=400&fit=crop
+GoPro Hero 11,38000,https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=400&fit=crop
+Lenovo Legion 5,78000,https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop
+Asus TUF Gaming,72000,https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop
+HP Omen 16,95000,https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop
+Dell G15,88000,https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop
+Acer Predator Helios,105000,https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop
+Samsung Microwave 28L,14000,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+LG Refrigerator 260L,28000,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+Whirlpool Washing Machine,25000,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+IFB Dishwasher,36000,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+Voltas AC 1.5 Ton,34000,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+Samsung Tab S9,62000,https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=400&h=400&fit=crop
+Apple iPad Pro 12.9,98000,https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=400&h=400&fit=crop
+Lenovo Tab P11,28000,https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=400&h=400&fit=crop
+Amazon Kindle Paperwhite,13000,https://images.unsplash.com/photo-1517842645767-c639042777db?w=400&h=400&fit=crop
+Realme Pad X,21000,https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=400&h=400&fit=crop
+Fastrack Smartwatch,4500,https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop
+Noise Colorfit Pro,3500,https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop
+Fire-Boltt Ninja,2800,https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop
+Boat Wave Neo,2400,https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop
+Tagg Verve Sense,3000,https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop
+Philips Mixer Grinder,4800,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+Prestige Induction Cooktop,3500,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+Havells Ceiling Fan,2800,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+Crompton Geyser 15L,7200,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+Bajaj OTG 28L,5500,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+Milton Water Bottle 1L,700,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+Tupperware Lunch Box,850,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+Cello Dinner Set 18pc,2400,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+Pigeon Pressure Cooker,1800,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+Butterfly Gas Stove,3200,https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop
+Nike Running Shorts,1500,https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=400&fit=crop
+Adidas Track Pants,2200,https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=400&fit=crop
+Puma Sports T-Shirt,1200,https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop
+Reebok Hoodie,2800,https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=400&fit=crop
+Skechers Sneakers,7200,https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop
+Levi’s Denim Jacket,4200,
+Zara Formal Shirt,2400,https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop
+H&M Casual Dress,2800,https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop
+Uniqlo Winter Coat,4800,https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=400&fit=crop
+Allen Solly Blazer,5200,https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=400&fit=crop
+Rice Basmati (10kg),950,
+Toor Dal (1kg),180,
+Chana Dal (1kg),160,
+Moong Dal (1kg),150,
+Besan Flour (1kg),90,
+Sunflower Oil (5L),950,
+Fortune Rice Bran Oil (1L),180,
+Aashirvaad Atta (10kg),520,
+Mother Dairy Paneer (200g),90,
+Amul Butter (500g),280,
+Britannia Bread (400g),50,
+Parle-G Biscuits (500g),40,
+Oreo Pack (300g),80,
+Maggie Noodles (12 pack),140,
+Tata Salt (1kg),25,
+MDH Masala (100g),60,
+Haldiram Namkeen (500g),120,
+Lays Chips (100g),30,
+Coca-Cola (2L),95,
+Pepsi (2L),90,
+Bisleri Water (1L),20,
+Red Bull (250ml),120,
+Tropicana Juice (1L),110,
+Ray-Ban Sunglasses,6200,
+Fastrack Sunglasses,2800,
+Titan Wrist Watch,5200,
+Casio G-Shock,7800,
+Rolex Submariner,720000,
+Omega Seamaster,420000,
+Daniel Klein Watch,3200,
+Boat Smartwatch Blaze,4200,
+"Samsung Smart Monitor 27""",21000,
+"LG Gaming Monitor 32""",28000,
+Acer Predator Monitor,45000,
+"Dell Ultrasharp 24""",22000,
+BenQ Zowie Monitor,26000,
+HP DeskJet Printer,6500,
+Canon Pixma Printer,7200,
+Epson EcoTank,12500,
+Brother Laser Printer,18500,
+Xerox Phaser Printer,22000,
+Lakme Lipstick,800,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+Maybelline Mascara,700,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+L’Oreal Foundation,1200,
+Nykaa Kajal,400,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+MAC Lip Gloss,2400,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+Pond’s Face Cream,350,
+Dove Shampoo,250,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+Head & Shoulders Shampoo,280,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+Pantene Conditioner,300,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+Clinic Plus Oil,150,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+Dettol Soap (pack of 4),120,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+Lux Body Wash,250,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+Nivea Men Deodorant,350,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+Axe Body Spray,280,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+Gillette Razor,200,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+Philips Trimmer,1500,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+Beardo Beard Oil,450,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+Ustraa Hair Wax,320,https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop
+Ikea Bed Frame,14500,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Nilkamal Plastic Chair,1200,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Godrej Almirah,18500,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Urban Ladder Sofa,42000,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Pepperfry Coffee Table,9800,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Home Centre TV Unit,12500,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Sleepwell Mattress,18500,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Kurlon Mattress,22000,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Durian Recliner,36000,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Featherlite Office Chair,11500,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Wooden Study Table,9500,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
+Plastic Shoe Rack,2200,https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop
